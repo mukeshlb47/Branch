@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+nowD="$(date +'%d-%m-%Y')"
+nowT="$(date +'%r')"
+echo "-------------------------------------------------------------------------------------------------"
+echo "@msgnd: Message delta import start ------------------ at $nowD $nowT"
+wget --spider --quiet 'http://stgsolr.fliplearn.com/solr/message/dataimport?command=delta-import&clean=false';
+sleep 10;
+wget --spider --quiet 'http://stgsolr.fliplearn.com/solr/message/dataimport?command=delta-import&clean=false';
+sleep 10;
+wget --spider --quiet 'http://stgsolr.fliplearn.com/solr/message/dataimport?command=delta-import&clean=false';
+sleep 10;
+wget --spider --quiet 'http://stgsolr.fliplearn.com/solr/message/dataimport?command=delta-import&clean=false';
+sleep 10;
+wget --spider --quiet 'http://stgsolr.fliplearn.com/solr/message/dataimport?command=delta-import&clean=false';
+sleep 10;
+wget --spider --quiet 'http://stgsolr.fliplearn.com/solr/message/dataimport?command=delta-import&clean=false'
+echo "@msgnd: ***Delta import success***"
+echo "@msgnd: Message delta import finish ------------------ which started at $nowD $nowT"
+
+
